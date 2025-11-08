@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Dr. Jane Doe</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="index.html">
+      <img src="assets/images/profile.jpg" alt="profile">
+      Dr. Jane Doe
+    </a>
+    <nav class="nav">
+      <a href="projects.html">Projects</a>
+      <a href="experiences.html">Experience</a>
+      <a href="blog.html">Blog</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+      <button id="logout-btn" class="btn-ghost">Logout</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2 class="h1">Contact</h2>
+      <p class="sub">Send a note or find social links.</p>
+
+      <form style="display:grid; gap:12px; max-width:560px; margin-top:8px">
+        <input name="name" placeholder="Your name" style="padding:10px;border-radius:8px;border:1px solid #e8e3dd" />
+        <input name="email" placeholder="Email" style="padding:10px;border-radius:8px;border:1px solid #e8e3dd" />
+        <textarea name="message" rows="5" placeholder="Message" style="padding:10px;border-radius:8px;border:1px solid #e8e3dd"></textarea>
+        <div>
+          <button class="btn" type="button" onclick="alert('For MVP, please email: you@example.com')">Send</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="year6"></span> Dr. Jane Doe</footer>
+
+  <script src="js/auth.js"></script>
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year6').innerText=new Date().getFullYear()</script>
+</body>
+</html>
