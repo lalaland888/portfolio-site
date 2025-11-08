@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Experience — Dr. Jane Doe</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="index.html">
+      <img src="assets/images/profile.jpg" alt="profile">
+      Dr. Jane Doe
+    </a>
+    <nav class="nav">
+      <a href="projects.html">Projects</a>
+      <a href="experiences.html">Experience</a>
+      <a href="blog.html">Blog</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+      <button id="logout-btn" class="btn-ghost">Logout</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2 class="h1">Professional Experience</h2>
+      <ol style="padding-left:16px; margin-top:8px">
+        <li style="margin-bottom:12px">
+          <strong>Senior Clinician-Researcher</strong> — Major Hospital, 2018–Present
+          <div class="kv">Led research on hospital systems; supervised QI programs.</div>
+        </li>
+        <li style="margin-bottom:12px">
+          <strong>Attending Physician</strong> — University Hospital, 2012–2018
+          <div class="kv">Clinical practice and mentorship.</div>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="year3"></span> Dr. Jane Doe</footer>
+
+  <script src="js/auth.js"></script>
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year3').innerText=new Date().getFullYear()</script>
+</body>
+</html>
