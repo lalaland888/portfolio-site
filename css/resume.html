@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Resume — Dr. Jane Doe</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="index.html">
+      <img src="assets/images/profile.jpg" alt="profile">
+      Dr. Jane Doe
+    </a>
+    <nav class="nav">
+      <a href="projects.html">Projects</a>
+      <a href="experiences.html">Experience</a>
+      <a href="blog.html">Blog</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+      <button id="logout-btn" class="btn-ghost">Logout</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2 class="h1">Resume</h2>
+      <p class="sub">Download a PDF version of the resume below.</p>
+
+      <div class="resume-download" style="margin-top:12px">
+        <a class="btn" href="assets/resume.pdf" download>Download Resume (PDF)</a>
+        <a class="btn-ghost" href="assets/resume.pdf" target="_blank">Open</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="year5"></span> Dr. Jane Doe</footer>
+
+  <script src="js/auth.js"></script>
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year5').innerText=new Date().getFullYear()</script>
+</body>
+</html>
