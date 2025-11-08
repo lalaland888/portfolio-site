@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects — Dr. Jane Doe</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="index.html">
+      <img src="assets/images/profile.jpg" alt="profile">
+      Dr. Jane Doe
+    </a>
+    <nav class="nav">
+      <a href="projects.html">Projects</a>
+      <a href="experiences.html">Experience</a>
+      <a href="blog.html">Blog</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+      <button id="logout-btn" class="btn-ghost">Logout</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2 class="h1">Selected Projects</h2>
+      <p class="sub">A selection of research and system-improvement projects.</p>
+
+      <div class="blog-grid" style="margin-top:16px">
+        <article class="card">
+          <img src="assets/images/project1.jpg" alt="Project 1">
+          <h4 style="margin-top:12px">Chronic Care Management Program</h4>
+          <p class="kv">Implemented a population-health intervention reducing ED visits by 17%.</p>
+          <p style="margin-top:12px"><a class="btn-ghost" href="#">Details</a></p>
+        </article>
+
+        <article class="card">
+          <img src="assets/images/project2.jpg" alt="Project 2">
+          <h4 style="margin-top:12px">Readmissions Reduction Initiative</h4>
+          <p class="kv">Multidisciplinary workflow redesign and staff training across 4 hospitals.</p>
+          <p style="margin-top:12px"><a class="btn-ghost" href="#">Details</a></p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="year2"></span> Dr. Jane Doe</footer>
+
+  <script src="js/auth.js"></script>
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year2').innerText=new Date().getFullYear()</script>
+</body>
+</html>
