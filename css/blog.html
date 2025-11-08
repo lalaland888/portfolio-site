@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog — Dr. Jane Doe</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="index.html">
+      <img src="assets/images/profile.jpg" alt="profile">
+      Dr. Jane Doe
+    </a>
+    <nav class="nav">
+      <a href="projects.html">Projects</a>
+      <a href="experiences.html">Experience</a>
+      <a href="blog.html">Blog</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+      <button id="logout-btn" class="btn-ghost">Logout</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2 class="h1">Insights & Articles</h2>
+      <p class="sub">Short pieces on clinical practice and systems-level thinking.</p>
+
+      <div id="blog-grid" style="margin-top:16px" class="blog-grid">
+        <!-- blog.js will populate -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="year4"></span> Dr. Jane Doe</footer>
+
+  <script src="js/auth.js"></script>
+  <script src="js/blog.js"></script>
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year4').innerText=new Date().getFullYear()</script>
+</body>
+</html>
